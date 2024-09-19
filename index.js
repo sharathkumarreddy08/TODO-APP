@@ -16,9 +16,9 @@ form.addEventListener("submit",e=>{
 let formValidation=()=>{
     if(input.value===""){
         msg.innerHTML='TODO cant be blanked';
-        console.log("failed")
+      //  console.log("failed")
     }else{
-        console.log("success");
+      //  console.log("success");
         msg.innerHTML="";
         acceptData();
        createPosts();
@@ -42,11 +42,11 @@ let createPosts=()=>{
     input.value="";
 }
 let deletepost= (e)=>{
-    console.log("deleted called")
+   // console.log("deleted called")
     e.parentElement.parentElement.remove();
 }
 let editpost =(e)=>{
-    console.log('edit called')
+   // console.log('edit called')
     input.value = e.parentElement.previousElementSibling.innerHTML;
     e.parentElement.parentElement.remove();
 }
